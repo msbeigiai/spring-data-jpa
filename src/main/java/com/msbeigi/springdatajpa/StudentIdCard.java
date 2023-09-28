@@ -3,6 +3,7 @@ package com.msbeigi.springdatajpa;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -25,7 +26,7 @@ public class StudentIdCard {
    private String cardNumber;
 
    @OneToOne(cascade = CascadeType.ALL)
-   @JoinColumn(name = "student_id", referencedColumnName = "id")
+   @JoinColumn(name = "student_id", referencedColumnName = "id", foreignKey = @ForeignKey(name = "student_id_fk"))
    private Student student;
 
    public StudentIdCard() {
