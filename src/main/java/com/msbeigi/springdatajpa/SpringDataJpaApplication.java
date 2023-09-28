@@ -23,6 +23,7 @@ public class SpringDataJpaApplication {
 	CommandLineRunner commandLineRunner(StudentRepository studentRepository) {
 		return args -> {
 			// generateRandomStudents(studentRepository);
+
 		};
 	}
 

@@ -6,8 +6,11 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+@Repository
+@Transactional(readOnly = true)
 public interface StudentRepository extends PagingAndSortingRepository<Student, Long> {
    Optional<Student> findStudentByEmail(String email);
 
