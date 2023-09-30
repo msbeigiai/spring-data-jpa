@@ -1,4 +1,4 @@
-# My Spring Boot Application
+# Simple spring data jpa application which shows all the data jpa details on how to use different data jpa configuration according to the use cases.
 
 This is a simple spring boot application that demonstrates how to create a RESTful web service using Spring Boot.
 
