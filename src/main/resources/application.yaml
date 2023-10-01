@@ -10,4 +10,4 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-        formar-sql: true
+        format-sql: true
