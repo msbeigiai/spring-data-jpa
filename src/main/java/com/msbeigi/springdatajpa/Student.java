@@ -45,7 +45,7 @@ public class Student {
    @OneToMany(mappedBy = "student", orphanRemoval = true, cascade = { CascadeType.PERSIST, CascadeType.REMOVE })
    private List<Book> books = new ArrayList<>();
 
-   @OneToMany(cascade = { CascadeType.PERSIST, CascadeType.REMOVE }, mappedBy = "student")
+   @OneToMany(mappedBy = "student", cascade = { CascadeType.PERSIST, CascadeType.REMOVE })
    private List<Enrolment> enrolments = new ArrayList<>();
 
    public Student() {
